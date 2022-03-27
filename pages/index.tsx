@@ -11,6 +11,7 @@ import VerticalLinearStepper from '../components/organisms/VerticalLinearStepper
 import TSParticles from '../components/organisms/TSParticles';
 import ProfileDescription from '../components/organisms/ProfileDescription';
 import { DataParser } from '../utils/DataParser';
+import SocialLinks from '../components/organisms/SocialLinks';
 
 const Home: NextPage = () => {
   const theme = React.useContext(ColorModeContext);
@@ -29,11 +30,23 @@ const Home: NextPage = () => {
         }}
       >
         <Avatar
-          alt={data.name}
-          src={data.profileImage}
+          alt={siteData.name}
+          src={siteData.profileImage}
           sx={{ width: 156, height: 156, display: { xs: 'none', md: 'flex' } }}
         />
-        {data.description.map((item, i) => (
+        <SocialLinks
+          facebook={siteData.facebook}
+          instagram={siteData.instagram}
+          twitter={siteData.twitter}
+          github={siteData.github}
+          linkedin={siteData.linkedin}
+          stackoverflow={siteData.stackoverflow}
+          devto={siteData.devto}
+          medium={siteData.medium}
+          dribble={siteData.dribble}
+          youtube={siteData.youtube}
+        />
+        {siteData.description.map((item, i) => (
           <ProfileDescription
             key={i}
             header={item.title}
