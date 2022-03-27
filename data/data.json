@@ -1,0 +1,146 @@
+{
+  "name": "John Doe",
+  "siteName": "A starter blog with portfolio",
+  "profileImage": "me.png",
+  "siteUrl": "https://hello.com",
+  "facebook": "https://facebook.com",
+  "instagram": "https://facebook.com",
+  "twitter": "https://facebook.com",
+  "github": "https://facebook.com",
+  "linkedin": "https://facebook.com",
+  "stackoverflow": "https://facebook.com",
+  "devto": "https://facebook.com",
+  "medium": "https://facebook.com",
+  "dribble": "https://facebook.com",
+  "youtube": "https://facebook.com",
+  "description": [
+    {
+      "title": "About",
+      "description": [
+        "Hi, I am John Doe",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec magna non dolor lacinia accumsan. Ut a tincidunt urna, sit amet porttitor tellus",
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sit amet congue nunc. Aenean rutrum rhoncus dui, at ultrices est lacinia ac. Nulla dapibus, elit sed vestibulum ultricies, lacus arcu feugiat lacus, ut bibendum leo justo non orci."
+      ]
+    },
+    {
+      "title": "Mobile Development",
+      "description": [
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sit amet congue nunc. Aenean rutrum rhoncus dui, at ultrices est lacinia ac. Nulla dapibus, elit sed vestibulum ultricies, lacus arcu feugiat lacus, ut bibendum leo justo non orci.",
+        "My primary experiance is in Mobile development."
+      ],
+      "tags": [
+        "Android (Java/Kotlin)",
+        "iOS (Swift)",
+        "React Native (TypeScript/JavaScript)",
+        "Flutter"
+      ]
+    },
+    {
+      "title": "Web Development",
+      "description": [
+        "Vivamus tincidunt hendrerit eros. Nunc in egestas lacus. Aenean volutpat, purus a porta accumsan, lorem libero euismod massa, nec ultricies nisi leo sed ante"
+      ],
+      "tags": [
+        "Reactjs",
+        "Nodejs",
+        "MongoDB",
+        "MySQL",
+        "PostGreSQL",
+        "GatsbyJS",
+        "NextJS",
+        "NestJS"
+      ]
+    }
+  ],
+  "steps": {
+    "title": "Work TimeLine",
+    "data": [
+      {
+        "details": true,
+        "time": "🗓 Feb 2020 - Current",
+        "label": "Github App screenshots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec magna non dolor lacinia accumsan",
+        "tech": ["React Native", "Android", "Kotlin", "iOS", "Swift"],
+        "images": ["/images/github-1.webp", "/images/github-2.webp", "/images/github-3.webp"],
+        "links": [
+          "Check it on PlayStore",
+          "https://play.google.com/store/apps/details?id=com.github.android"
+        ]
+      },
+      {
+        "details": true,
+        "time": "🗓 Sep 2020 - Jan 2021",
+        "label": "Google Workspace Website screenshots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec magna non dolor lacinia accumsan",
+        "tech": ["iOS(Swift)", "Android(Kotlin)"],
+        "images": [
+          "/images/google-workspace-1.png",
+          "/images/google-workspace-2.png",
+          "/images/google-workspace-3.png"
+        ],
+        "links": ["Google Workspace", "https://workspace.google.com/"]
+      },
+      {
+        "details": true,
+        "time": "🐢🐙🐠🐟🐳🐋 Put anything you want on the timeline",
+        "label": "Description without any screenshots",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec magna non dolor lacinia accumsan",
+        "tech": ["Android", "iOS", "Unity", "Hololens", "Vuforia"]
+      },
+      {
+        "details": true,
+        "time": "🗓 Feb 2017 - May 2017",
+        "label": "Google Drive App",
+        "description": "Description with mobile screenshots",
+        "tech": ["Android(Java)", "iOS(Swift)"],
+        "images": ["/images/gdrive-1.png", "/images/gdrive-2.png", "/images/gdrive-3.png"],
+        "links": ["Available on AppStore", "https://apps.apple.com/us/app/12c-pro/id1476073840"]
+      },
+      {
+        "details": true,
+        "time": "🗓 June 2015 - Jan 2017",
+        "label": "XXX hello XXX",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec magna non dolor lacinia accumsan",
+        "tech": ["Android(Java)"],
+        "links": ["link", "https://google.com"]
+      },
+      {
+        "details": false,
+        "time": "Joined XXX XXX XXX, NL"
+      },
+      {
+        "details": true,
+        "time": "🗓 June 2013 - May 2015",
+        "label": "Working on something",
+        "description": "Add anything you want",
+        "tech": ["Android(Java)"]
+      },
+      {
+        "details": false,
+        "time": "Got Placed in XXX"
+      },
+      {
+        "details": true,
+        "time": "🗓 2009 - 2013",
+        "label": "🎓 Bachelor of Technology",
+        "description": "Completed Bachelor of Technology(B.Tech) from XXX in Computer Science",
+        "tech": ["Computer Science"]
+      },
+      {
+        "details": true,
+        "time": "🗓 2006 - 2008",
+        "label": "HS",
+        "description": "Completed Higher Secondary from XXX in Science",
+        "tech": ["Science"]
+      },
+      {
+        "details": false,
+        "time": "🏫 Schooling"
+      },
+      {
+        "details": false,
+        "time": "🗓 1991 👶"
+      }
+    ]
+  }
+}
