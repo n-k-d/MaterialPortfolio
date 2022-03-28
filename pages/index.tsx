@@ -79,7 +79,7 @@ const Home: NextPage = () => {
         </Typography>
         {siteData.contact && (
           <Fab
-            onClick={() => (window.location = `mailto:${siteData.contact}`)}
+            onClick={() => (window.location.href = `mailto:${siteData.contact}`)}
             sx={{ position: 'fixed', bottom: 20, right: 20 }}
           >
             <EmailIcon />
