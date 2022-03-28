@@ -18,7 +18,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.3",
-    "@mui/styles": "^5.4.2",
+    "@mui/styles": "5.5.3",
     "gray-matter": "^4.0.3",
     "next": "^12.1.0",
     "react": "^17.0.2",
