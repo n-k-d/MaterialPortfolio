@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { animated, Spring } from 'react-spring';
+import { Colors } from '../../../utils/Colors';
 
 type AnimatedButtonType = {
   text: string;
@@ -11,13 +12,13 @@ function AnimatedButton({ text }: AnimatedButtonType) {
       from={{
         width: '0%',
         height: '2px',
-        backgroundColor: 'red',
+        backgroundColor: Colors.HIGHLIGHT,
         marginTop: '0px',
       }}
       to={{
         width: '100%',
         height: '2px',
-        backgroundColor: 'orange',
+        backgroundColor: Colors.ACCENT,
         marginTop: '5px',
       }}
       config={{ duration: 400 }}

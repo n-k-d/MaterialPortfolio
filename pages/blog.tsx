@@ -17,7 +17,7 @@ export default function Blog(props: Props) {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <NavBar currentPage={1} />
-      <Box mt={10} mr={10} ml={10} width="50%" mb={10}>
+      <Box mt={{ xs: 1, md: 10 }} mr={{ xs: 6, md: 10 }} ml={{ xs: 6, md: 10 }} mb={10}>
         {props?.allPosts?.map((blog, i) => (
           <BlogPostCard
             key={i}

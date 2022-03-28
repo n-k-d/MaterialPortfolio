@@ -2,7 +2,7 @@ import * as React from 'react';
 import type { NextPage } from 'next';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import { Avatar } from '@mui/material';
+import { Avatar, Fab, Typography } from '@mui/material';
 import AnimatedButton from '../components/molecules/AnimatedButton/AnimatedButton';
 import { ColorModeContext } from '../context/MUIThemeProvider';
 import data from '../data/data.json';
@@ -12,6 +12,8 @@ import TSParticles from '../components/organisms/TSParticles';
 import ProfileDescription from '../components/organisms/ProfileDescription';
 import { DataParser } from '../utils/DataParser';
 import SocialLinks from '../components/organisms/SocialLinks';
+import EmailIcon from '@mui/icons-material/Email';
+import { Colors } from '../utils/Colors';
 
 const Home: NextPage = () => {
   const theme = React.useContext(ColorModeContext);
@@ -22,7 +24,7 @@ const Home: NextPage = () => {
       <NavBar currentPage={0} />
       <Box
         sx={{
-          my: 10,
+          mt: 10,
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -32,7 +34,7 @@ const Home: NextPage = () => {
         <Avatar
           alt={siteData.name}
           src={siteData.profileImage}
-          sx={{ width: 156, height: 156, display: { xs: 'none', md: 'flex' } }}
+          sx={{ width: 156, height: 156, display: { xs: 'flex' } }}
         />
         <SocialLinks
           facebook={siteData.facebook}
@@ -54,8 +56,35 @@ const Home: NextPage = () => {
             tags={item.tags}
           />
         ))}
-        <AnimatedButton text="Work Timeline" />
-        <VerticalLinearStepper steps={siteData.steps.data} />
+        {siteData.steps.map((item, i) => (
+          <Box
+            key={i}
+            mt={2}
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <AnimatedButton text={item.title} />
+            <Typography mt={1} variant="body1">
+              {item.description}
+            </Typography>
+            <VerticalLinearStepper key={i} steps={item.data} />
+          </Box>
+        ))}
+        <Typography mt={5} mb={1} variant="body1">
+          {siteData.footer}
+        </Typography>
+        {siteData.contact && (
+          <Fab
+            onClick={() => (window.location = `mailto:${siteData.contact}`)}
+            sx={{ position: 'fixed', bottom: 20, right: 20 }}
+          >
+            <EmailIcon />
+          </Fab>
+        )}
         {theme.animation && <TSParticles />}
       </Box>
     </Container>

@@ -1,11 +1,12 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import { ColorModeContext } from '../../../context/MUIThemeProvider';
+import { Colors } from '../../../utils/Colors';
 
 function TSParticles() {
   const theme = React.useContext(ColorModeContext);
 
-  const color = theme.mode === 'dark' ? '#ffa726' : '#e0e0e0';
+  const color = theme.mode === 'dark' ? Colors.PARTICLES_DARK : Colors.PARTICLES_LIGHT;
 
   return (
     <Particles

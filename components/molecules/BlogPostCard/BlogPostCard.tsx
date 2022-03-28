@@ -1,6 +1,7 @@
 import { Box, Grid, Chip, Typography } from '@mui/material';
 import Link from 'next/link';
 import { animated, Spring } from 'react-spring';
+import { Colors } from '../../../utils/Colors';
 
 interface BlogPostCardType {
   title: string;
@@ -17,20 +18,20 @@ function BlogPostCard(blogPostProps: BlogPostCardType) {
       from={{
         width: '0%',
         height: '2px',
-        backgroundColor: 'red',
+        backgroundColor: Colors.HIGHLIGHT,
         marginTop: '0px',
       }}
       to={{
         width: '80%',
         height: '2px',
-        backgroundColor: 'orange',
+        backgroundColor: Colors.ACCENT,
         marginTop: '5px',
       }}
       config={{ duration: 400 }}
     >
       {(props) => (
         <Link passHref href={`blog/${encodeURIComponent(slug)}`}>
-          <Box sx={{ marginTop: '20px' }}>
+          <Box sx={{ marginTop: '80px' }}>
             <Typography variant="h3" fontSize={25}>
               {title}
             </Typography>

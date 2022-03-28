@@ -10,6 +10,7 @@ import { Chip, Grid } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import Image from 'next/image';
 import { StepData } from '../../../utils/DataParser';
+import AnimatedButton from '../../molecules/AnimatedButton';
 
 function VerticalLinearStepper({ steps }: { steps: StepData[] }) {
   const [activeStep] = React.useState(0);

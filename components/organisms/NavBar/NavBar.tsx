@@ -12,6 +12,7 @@ import { MenuItem } from '@mui/material';
 import { ColorModeContext } from '../../../context/MUIThemeProvider';
 import ToggleButton from '../../molecules/ToggleButton';
 import HeaderButton from '../../molecules/HeaderButton';
+import Link from 'next/link';
 
 const pages = [
   {
@@ -82,12 +83,13 @@ function NavBar(props: NavBarType) {
             >
               {pages.map((page) => (
                 <MenuItem key={page.title}>
-                  <Typography textAlign="center">{page.title}</Typography>
+                  <Link href={page.href}>
+                    <Typography textAlign="center">{page.title}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <Avatar alt="Remy Sharp" src="me.png" sx={{ display: { md: 'none' } }} />
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page, index) => (
               <HeaderButton

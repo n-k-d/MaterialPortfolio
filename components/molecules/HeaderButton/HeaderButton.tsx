@@ -1,6 +1,7 @@
 import { Box, Button } from '@mui/material';
 import Link from 'next/link';
 import { animated, Spring } from 'react-spring';
+import { Colors } from '../../../utils/Colors';
 
 interface HeaderButtonInterface {
   text: string;
@@ -16,12 +17,12 @@ function HeaderButton(buttonProps: HeaderButtonInterface) {
       from={{
         width: '0%',
         height: '2px',
-        backgroundColor: 'red',
+        backgroundColor: Colors.HIGHLIGHT,
       }}
       to={{
         width: '100%',
         height: '2px',
-        backgroundColor: 'orange',
+        backgroundColor: Colors.ACCENT,
       }}
       config={{ duration: 400 }}
     >
