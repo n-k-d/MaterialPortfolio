@@ -9,7 +9,7 @@
   "instagram": "https://instagram.com",
   "twitter": "https://twitter.com",
   "github": "https://github.com",
-  "linkedin":"https://linkedin.com",
+  "linkedin": "https://linkedin.com",
   "stackoverflow": "https://stackoverflow.com",
   "devto": "https://dev.to",
   "medium": "https://medium.com",
@@ -182,21 +182,15 @@
           "label": "My YouTube channel on web development",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec magna non dolor lacinia accumsan",
           "tech": ["JavaScript", "TypeScript", "React.js", "Node.js", "React Native"],
-          "links": [
-            "Follow me on YouTube",
-            "https://www.youtube.com/c/WebDevAssist"
-          ]
+          "links": ["Follow me on YouTube", "https://www.youtube.com/c/WebDevAssist"]
         },
         {
           "details": true,
           "time": "🗓 2020 - Current",
           "label": "My YouTube channel on Mobile development",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec magna non dolor lacinia accumsan",
-          "tech": ["Android","iOS", "Kotlin", "Swift"],
-          "links": [
-            "Follow me on YouTube",
-            "https://www.youtube.com/c/AppDevAssist"
-          ]
+          "tech": ["Android", "iOS", "Kotlin", "Swift"],
+          "links": ["Follow me on YouTube", "https://www.youtube.com/c/AppDevAssist"]
         }
       ]
     }

@@ -21,7 +21,7 @@ export default function Post({ post }: { post: PostType }) {
       {router.isFallback ? (
         <Typography>Loading…</Typography>
       ) : (
-        <Box mx={40} my={10}>
+        <Box mx={{ xs: 5, md: 40 }} my={10}>
           <Head>
             <title>{title}</title>
             <meta name="robots" content="follow, index" />

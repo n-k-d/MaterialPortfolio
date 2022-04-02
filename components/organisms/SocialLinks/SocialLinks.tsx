@@ -28,8 +28,11 @@ function SocialLinks(data: SocialLinksType) {
   return (
     <Box
       mt={2}
+      mr={5}
+      ml={5}
       sx={{
         display: 'flex',
+        flexWrap: 'wrap',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',

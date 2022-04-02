@@ -68,7 +68,7 @@ const Home: NextPage = () => {
             }}
           >
             <AnimatedButton text={item.title} />
-            <Typography mt={1} variant="body1">
+            <Typography mt={1} align="center" mx={4} variant="body1">
               {item.description}
             </Typography>
             <VerticalLinearStepper key={i} steps={item.data} />

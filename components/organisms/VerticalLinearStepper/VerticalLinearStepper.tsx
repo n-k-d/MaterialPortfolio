@@ -15,7 +15,7 @@ function VerticalLinearStepper({ steps }: { steps: StepData[] }) {
   const [activeStep] = React.useState(0);
 
   return (
-    <Box sx={{ maxWidth: 600, marginTop: '20px' }}>
+    <Box mr={4} ml={4} sx={{ maxWidth: 600, marginTop: '20px' }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, i) => (
           <Step expanded key={i} completed={false}>

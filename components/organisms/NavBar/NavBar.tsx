@@ -83,7 +83,7 @@ function NavBar(props: NavBarType) {
             >
               {pages.map((page) => (
                 <MenuItem key={page.title}>
-                  <Link href={page.href}>
+                  <Link passHref href={page.href}>
                     <Typography textAlign="center">{page.title}</Typography>
                   </Link>
                 </MenuItem>
