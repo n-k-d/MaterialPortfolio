@@ -26,8 +26,8 @@
     "react-material-ui-carousel": "3.2.0",
     "react-spring": "^9.4.3",
     "react-tsparticles": "^1.41.5",
-    "remark": "^12.0.1",
-    "remark-html": "^13.0.1",
+    "remark": "14.0.2",
+    "remark-html": "15.0.1",
     "remark-prism": "^1.1.14"
   },
   "devDependencies": {
