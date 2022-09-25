@@ -23,7 +23,7 @@
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-material-ui-carousel": "3.2.0",
+    "react-material-ui-carousel": "3.4.2",
     "react-spring": "^9.4.3",
     "react-tsparticles": "^1.41.5",
     "remark": "^12.0.1",
